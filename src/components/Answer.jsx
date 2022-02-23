@@ -21,6 +21,7 @@ const Answer = (props) => {
     const classes = useStyles();
     return (
         <>
+        {/* Answerを一回押して、次の質問等がでるまでdisabledにしたい */}
             <Button 
                 className={ classes.button }
                 variant="outlined" onClick={() => props.select( props.content, props.nextId )}
